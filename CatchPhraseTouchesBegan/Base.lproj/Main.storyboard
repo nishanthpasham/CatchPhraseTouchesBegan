@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="CatchPhraseTouchesBegan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Catch Phrase" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilZ-b9-DTr">
+                                <rect key="frame" x="249" y="50" width="104" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUT-da-p9v">
+                                <rect key="frame" x="263" y="127" width="75" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Atf-Q0-jAF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ykc-yn-0aJ">
+                                <rect key="frame" x="0.0" y="476" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Start" id="FtH-VS-sut">
+                                        <connections>
+                                            <action selector="startButton:" destination="vXZ-lx-hvc" id="s4H-bg-XrP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="0zj-Oy-67b"/>
+                                    <barButtonItem title="Stop" id="0Yi-uc-e4X">
+                                        <connections>
+                                            <action selector="stopButton:" destination="vXZ-lx-hvc" id="4aq-LD-VPf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GbC-yv-32P">
+                                <rect key="frame" x="0.0" y="278" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem title="Team 1" id="Nrf-er-G0j">
+                                        <connections>
+                                            <action selector="addAPointToTeam1" destination="vXZ-lx-hvc" id="nH8-IQ-e8m"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" id="s4r-Oc-PPu">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="Fkn-jM-eXp">
+                                            <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wcR-w0-8SH"/>
+                                    <barButtonItem style="plain" id="ZXt-nE-1sx">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="4BJ-Qa-YIM">
+                                            <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                    <barButtonItem title="Team 2" id="m8N-oU-zMw">
+                                        <connections>
+                                            <action selector="addAPointToTeam2" destination="vXZ-lx-hvc" id="kYv-1B-7bc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="GbC-yv-32P" secondAttribute="trailing" constant="-16" id="2pI-dJ-TNf"/>
+                            <constraint firstItem="ilZ-b9-DTr" firstAttribute="centerX" secondItem="TUT-da-p9v" secondAttribute="centerX" id="4Fj-g5-Uby"/>
+                            <constraint firstItem="Ykc-yn-0aJ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5dZ-OR-OYn"/>
+                            <constraint firstAttribute="trailing" secondItem="Ykc-yn-0aJ" secondAttribute="trailing" id="5gw-RV-yrj"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ykc-yn-0aJ" secondAttribute="bottom" constant="36" id="6hC-jC-VuX"/>
+                            <constraint firstItem="GbC-yv-32P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="L5X-k6-O7h"/>
+                            <constraint firstItem="TUT-da-p9v" firstAttribute="centerX" secondItem="Ykc-yn-0aJ" secondAttribute="centerX" id="bCC-od-c3n"/>
+                            <constraint firstAttribute="centerY" secondItem="ilZ-b9-DTr" secondAttribute="centerY" constant="100" id="flV-pk-BOz"/>
+                            <constraint firstItem="TUT-da-p9v" firstAttribute="top" secondItem="ilZ-b9-DTr" secondAttribute="bottom" constant="56" id="jTk-oM-VMV"/>
+                            <constraint firstItem="Ykc-yn-0aJ" firstAttribute="top" secondItem="GbC-yv-32P" secondAttribute="bottom" constant="154" id="tYr-zC-7Pd"/>
+                            <constraint firstItem="ilZ-b9-DTr" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="wRa-j4-dV7"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="flV-pk-BOz"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="label" destination="TUT-da-p9v" id="Th1-xE-VzH"/>
+                        <outlet property="team1ScoreLabel" destination="Fkn-jM-eXp" id="Fgi-9H-4qs"/>
+                        <outlet property="team2ScoreLabel" destination="4BJ-Qa-YIM" id="hkG-B1-fUq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
